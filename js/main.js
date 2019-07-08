@@ -211,14 +211,14 @@
              * -----------------------------------------------------------------
              */
 
-
+/*
             var chimpForm = $('#mc-form');
 
             chimpForm.ajaxChimp({
                 url: 'https://tahsinscreation.us17.list-manage.com/subscribe/post?u=8d43c37bb4dbc0d0b8078d874&amp;id=c638bf1e04'
             });
 
-
+*/
 
 
             /*
@@ -228,7 +228,7 @@
              */
 
 
-
+/*
             var contactSubmit = $('#contact-submit');
 
             contactSubmit.on('click', function(e) {
@@ -260,7 +260,7 @@
 
             });
 
-
+*/
             /*
              * -----------------------------------------------------------------
              *--------------------Owl Carousel For Testimonial------------------

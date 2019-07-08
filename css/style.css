@@ -574,6 +574,8 @@ header nav ul li a:focus {
 
 .portfolio .overlay-content-item {
   transform: translateY(32%);
+  position: relative;
+  top: 30px;
 }
 
 .portfolio-overlay .category {
