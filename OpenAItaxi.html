@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arnav Paruthi's persona website">
+    <meta name="keywords" content="dark, html, one page, bootstrap,design, creative, onepage, clean, modern,blog,business,parallax">
+    <title>Arnav Paruthi</title>
+    <!--css styles-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i%7CRaleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!---title logo icon-->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Respond.js IE8 support media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+    <!-- Start Preloader -->
+    <div class="preloader">
+        <div class="preloader-img"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start scroll-top button -->
+    <div id="scroll-top-area">
+        <a href="#"><span>Scroll Top</span><i class="fas fa-arrow-right"></i></a>
+    </div>
+    <!-- End scroll-top button -->
+
+    <!--Start Header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html" class="logo">
+                        <img src="images/logoWhite.png" data-dark="images/logoBlack.png" alt="logo" style="height: 45px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--Start Welcome Section-->
+    <section class="welcome-area animated-text" id="welcome-area">
+        <div class="image-bg" id="welcome-image-area">
+            <div class="bg-overlay"></div>
+            <div class="welcome-overlay"></div>
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="welcome-text">
+                                    <div class="type-wrap">
+                                        <div id="typed-strings">
+                                            <h1>OpenAI's<span> Taxi Game</span></h1>
+                                        </div>
+                                        <span id="typed"></span>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div class="social-icons">
+                                        <a href="https://ca.linkedin.com/in/arnavparuthi"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                        <a href="https://medium.com/@arnavparuthi"><i class="fab fa-medium"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCK-W2Io90-k1KQqahGAZLCw"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Welcome Section-->
+
+    <!--Start Section Explaining Project-->
+
+    <section class="service padding-style1" id="RL">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-header">
+                        <!--First Coloumn START-->
+                        <p class="title-small" style="color:white">
+                            Some white text so the formating works out
+                        </p>
+                        <h4 class="section-title">
+                            OpenAI Taxi
+                        </h4>
+                        <p>
+                            This was my first project using reinforcement learning, a type of machine learning which learns through experience. I made an agent which learnt to act in OpenAI’s taxi environment. 
+                            <br>
+                            <br>
+                        </p>
+                        <img style="margin: auto; display:block" src="images/OpenAITaxi.png" width="200">
+                        <p>
+                            <br>
+                            <br>
+                            The solid block is the taxi, and the 4 letters are pickup/dropoff locations. The goal is to pick up passengers from the letter highlighted in blue and drop them off at the letter in red. 
+                        </p>
+                        <!--First Coloumn END-->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-header">
+                        <!--Second Coloumn START-->
+                        <p class="title-small">
+                            The algorithm
+                        </p>
+                        <h4 class="section-title">
+                            Q-Networks
+                        </h4>
+                        <p>
+                            In order to do this I used a reinforcement learning technique called Q-learning. It works using the bellman equation.  
+                            <br>
+                            <br>
+                        </p>
+                        <img src="images/bellmanEquation.png" width="500">
+                        <div class="image-description"><p> The Bellman Equation </p></div>
+                        <p>
+                            <br>
+                            The Bellman Equation says that the new expected value of the current state-action pair is equal to the old value of the current state-action pair, 
+                            plus the sum of the reward gained from the transition to the next state and the difference between the highest state-action pair 
+                            of the next state, and the old value of the current state. The sum is then multplied by a discount factor.
+                            <br>
+                            <br>
+                            Ok that was a lot. If you want to learn more about how this all works read my article!
+                        </p>
+                        <p class="center">
+                            &nbsp;<a href="https://medium.com/@arnavparuthi/a-simple-reinforcement-learning-algorithm-which-plays-openais-taxi-game-2b1c6c251bb1" class="btn-style2 service-btn">Article</a>
+                        </p>
+                        <!--Second Coloumn END-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--End Section Explaining Project-->
+
+    <!--Start Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2019 Arnav Paruthi | All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!--javascript-->
+    <script src="js/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+    <script src="js/jquery.ajaxchimp.min.js "></script>
+    <script src="js/lightbox.js "></script>
+    <script src="js/typed.min.js "></script>
+    <script src="js/mixitup.min.js "></script>
+    <script src="js/jquery.counterup.min.js "></script>
+    <script src="js/jquery.singlePageNav.min.js "></script>
+    <script src="js/main.js"></script>
+</body>

@@ -406,7 +406,15 @@ header nav ul li a:focus {
 .service-header p {
   text-align: left;
   padding-right: 16px;
-  color: #fff;
+  color: #000000;
+}
+.service-header .image-description {
+  text-align: center;
+}
+
+.service-header .image-description p {
+  display: inline-block;
+  font-size: 12px;
 }
 
 .service-header a {
@@ -422,7 +430,7 @@ header nav ul li a:focus {
   margin-bottom: 0px;
   text-transform: capitalize;
   font-weight: 800;
-  color: #fff;
+  color: #000000;
 }
 .service .item {
   margin-left: 20px;
