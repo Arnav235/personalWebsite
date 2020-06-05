@@ -103,6 +103,30 @@
                 offset: width3
             });
 
+            
+            /*
+             * -----------------------------------------------------------------
+             *-------------------------button animation-------------------------
+             * -----------------------------------------------------------------
+             */
+
+            
+            document.getElementById("about-text-paragraph").style.maxHeight = document.getElementById("about-text-paragraph").scrollHeight + 'px';
+
+            document.querySelectorAll('.accordian_button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const accordianContent = button.nextElementSibling;
+                    const intropara = document.getElementById("about-text-paragraph");
+                    button.classList.toggle('accordian_button--active');
+                    if (button.classList.contains('accordian_button--active')) {
+                        accordianContent.style.maxHeight = accordianContent.scrollHeight + 'px';
+                        intropara.style.maxHeight = 0;
+                    } else {
+                        accordianContent.style.maxHeight = 0;
+                        intropara.style.maxHeight = intropara.scrollHeight + 'px';
+                    }
+                })
+            })
 
             /*
              * -----------------------------------------------------------------

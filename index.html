@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arnav Paruthi's persona website">
+    <meta name="description" content="Arnav Paruthi's personal website">
     <meta name="keywords" content="dark, html, one page, bootstrap,design, creative, onepage, clean, modern,blog,business,parallax">
     <title>Arnav Paruthi</title>
     <!--css styles-->
@@ -84,7 +84,7 @@
                                         <div id="typed-strings">
                                             <h1>Hi I'm <span>Arnav Paruthi</span></h1>
                                             <h1>I'm a <span>ML Developer</span></h1>
-                                            <h1>I'm an <span>Innovator</span></h1>
+                                            <h1>I'm an <span>activator</span></h1>
                                         </div>
                                         <span id="typed"></span>
                                     </div>
@@ -116,11 +116,43 @@
                         <h4 class="section-title">
                             Hello! I am Arnav Paruthi
                         </h4>
-                        <p class="about-text">
-                            I'm a 16 year old from Toronto, currently working with reinforcement learning. I have made multiple projects in the space, including one where 
-                            I used the AlphaZero algoirthm to train an agent to play ultimate tic-tac-toe. The future of reinforcement learning is super exciting
-                            to me because the field is currently just in its infancy, and I believe it will have a profound impact on many industries.
-                        </p>
+                        <div id="about-text-paragraph">
+                            <p class="about-text">
+                                I'm a 17-year-old from Toronto, interested in technology and committed to improving people’s quality of life.
+                                I’ve made multiple projects with AI and interned at fleetops.ai during the summer of 2019. Recently, I worked with
+                                Kidogo, a company that runs early childhood development centres in Nairobi’s slums, to develop a strategy to decrease the
+                                ratio of children to caretakers without compromising profitability. I believe that access to basic needs has the largest
+                                impact on people’s lives, and I want to ensure everyone across the world has them.
+                            </p>
+                        </div>
+                        <div class="accordian">
+                            <button type="button" class="accordian_button">&nbsp&nbsp My Journey</button>
+                            <div class="accordian_text">
+                                <p style="padding-top: 20px;">
+                                    I’ve always been interested in technology. As a child, my interests jumped between iPhones, drones, graphene, and Tesla. At age 14, 
+                                    I started learning to code. I’d tried it before and was discouraged by its difficulty, but after doing a course on Codecademy 
+                                    everything started to make sense. 
+                                    <br><br>
+                                    While watching coding videos, I came across this new concept called AI. Recognizing faces was cool, but I was blown away by the 
+                                    fact that these algorithms could beat world-class human players at Atari games and Go (an ancient Chinese board game, considered 
+                                    the hardest classical game). I started building my own AI projects and learning about the field. My projects landed me a summer 
+                                    internship at fleetops.ai on the engineering team.
+                                    <br><br>
+                                    Late 2019, after completing an AI project, I thought about what I wanted to do next. While considering my options, I realized that 
+                                    everything I’d done so far wasn’t real. Nobody was actually using it, it wasn’t impacting people, and what’s the point of building 
+                                    something that doesn’t have a purpose. 
+                                    <br><br>
+                                    So I started researching potential problems I could help solve through technology. Recently I worked with Kidogo, a company that 
+                                    runs early childhood development centres in Nairobi’s slums, to develop a strategy to decrease the ratio of children to caretakers 
+                                    without compromising profitability. Currently, I’m working with a team to figure out how hermetic bags (an improved on-farm grain 
+                                    storage technology which significantly reduces food loss) could be better distributed in developing countries. 
+                                    <br><br>
+                                    The things which have the most impact on people’s lives aren’t the rockets going to mars or food delivery to your door (although, that 
+                                    is increasingly important in these times). It’s access to clean water, food, sanitation, shelter, education, fulfilling work, and great 
+                                    personal relationships (I love this ted talk). I want to make sure everyone has those basic needs. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
@@ -150,13 +182,56 @@
                                 <li class="filter" data-filter="all">ALL</li>
                                 <li class="filter" data-filter=".design">Projects</li>
                                 <li class="filter" data-filter=".development">Articles</li>
-                                <li class="filter" data-filter=".plugin">Presentations</li>
+                                <li class="filter" data-filter=".plugin">Videos</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs">
                         <div class="portfolio-content-items">
                             <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12 mix design">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/Portfolio/kidogo.jpeg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <div class="overlay-content">
+                                                <div class="overlay-content-item">
+                                                    <p class="category">Kidogo reccomendation deck</p>
+                                                    <a href="https://drive.google.com/file/d/1FdQcGDreGqs84SYmXLFS0Ucli_1FF78J/view">
+                                                        <div class="magnify-icon">
+                                                            <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 mix plugin development">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/Portfolio/text_to_image_conversion.png" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <div class="overlay-content">
+                                                <div class="overlay-content-item">
+                                                    <p class="category">Text to image conversion algorithms</p>
+                                                    <a href="https://www.youtube.com/watch?v=ndVdhttb0UE">
+                                                        <div class="magnify-icon">
+                                                            <p><span><i class="fab fa-youtube" aria-hidden="true"></i></span></p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="https://medium.com/@arnavparuthi/mirrorgan-converting-text-descriptions-to-images-b33fdda6c434">
+                                                        <div class="magnify-icon">
+                                                            <p><span><i class="fab fa-medium aria-hidden="true"></i></span></p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 mix plugin">
                                     <div class="portfolio-item">
                                         <div class="portfolio-img">
@@ -184,7 +259,7 @@
                                         <div class="portfolio-overlay">
                                             <div class="overlay-content">
                                                 <div class="overlay-content-item">
-                                                    <p class="category">Focus-Net</p>
+                                                    <p class="category">Focus-Net - Using BCIs to understanding how websites affect your focus</p>
                                                     <a href="https://devpost.com/software/focus-net-using-eeg-data-and-ml-to-stay-on-task?ref_content=contribution-prompt&ref_feature=engagement&ref_medium=email&utm_campaign=contribution-prompt&utm_content=contribution_reminder&utm_medium=email&utm_source=transactional#app-team">
                                                         <div class="magnify-icon">
                                                             <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
@@ -207,25 +282,6 @@
                                                     <a href="https://medium.com/@arnavparuthi/how-the-robots-cleaning-your-home-and-doing-backflips-work-80da92691b2">
                                                         <div class="magnify-icon">
                                                             <p><span><i class="fab fa-medium" aria-hidden="true"></i></span></p>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12 mix plugin">
-                                    <div class="portfolio-item">
-                                        <div class="portfolio-img">
-                                            <img src="images/Portfolio/imageRecognition.png" alt="portfolio" class="img-responsive">
-                                        </div>
-                                        <div class="portfolio-overlay">
-                                            <div class="overlay-content">
-                                                <div class="overlay-content-item">
-                                                    <p class="category">How Image Recognition Works</p>
-                                                    <a href="https://www.youtube.com/watch?v=GUTyNJMak3Y">
-                                                        <div class="magnify-icon">
-                                                            <p><span><i class="fab fa-youtube" aria-hidden="true"></i></span></p>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -300,6 +356,25 @@
                                                 <div class="overlay-content-item">
                                                     <p class="category">Explination of the AlphaZero Algorithm</p>
                                                     <a href="https://www.youtube.com/watch?v=xAg1blophwM">
+                                                        <div class="magnify-icon">
+                                                            <p><span><i class="fab fa-youtube" aria-hidden="true"></i></span></p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 mix plugin">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/Portfolio/imageRecognition.png" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <div class="overlay-content">
+                                                <div class="overlay-content-item">
+                                                    <p class="category">How Image Recognition Works</p>
+                                                    <a href="https://www.youtube.com/watch?v=GUTyNJMak3Y">
                                                         <div class="magnify-icon">
                                                             <p><span><i class="fab fa-youtube" aria-hidden="true"></i></span></p>
                                                         </div>
@@ -469,7 +544,7 @@
                                     head office. Our solution was to use a concept in behavioral psychology called "nudging", to encourage customers to maintain 
                                     cleanly shelves, reducing the amount of time employees would have to spend zoning.
                                 </p>
-                                <a href="https://www.youtube.com/watch?v=O47tzfoJwpc" class="read-more">READ MORE<i class="fas fa-angle-double-right"></i></a>
+                                <a href="https://www.youtube.com/watch?v=O47tzfoJwpc" class="read-more">Watch the Presentation<i class="fas fa-angle-double-right"></i></a>
                             </div>
                             <div class="blog-img right col-md-12 col-lg-6">
                                 <img src="images/blog/walmart.png" alt="blog1" class="img-responsive">
@@ -574,7 +649,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright">
-                        <p>Copyright © 2019 Arnav Paruthi | All rights reserved</p>
+                        <p>Copyright © 2020 Arnav Paruthi | All rights reserved</p>
                     </div>
                 </div>
             </div>
