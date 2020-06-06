@@ -97,7 +97,7 @@ header nav ul li a:focus {
 
 @media (max-width:1000px) {
   .welcome-area .image-bg {
-    background: url("../images/background1.jpeg");
+    background: url("../images/background.jpeg");
   }
 }
 
