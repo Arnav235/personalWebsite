@@ -106,7 +106,7 @@
             
             /*
              * -----------------------------------------------------------------
-             *-------------------------button animation-------------------------
+             *-------------------------Accordian button animation-------------------------
              * -----------------------------------------------------------------
              */
 
@@ -123,7 +123,29 @@
                         intropara.style.maxHeight = 0;
                     } else {
                         accordianContent.style.maxHeight = 0;
-                        intropara.style.maxHeight = intropara.scrollHeight + 'px';
+                        intropara.style.maxHeight = "100vh";
+                    }
+                })
+            })
+
+            /*
+             * -----------------------------------------------------------------
+             *-------------------------button animation-------------------------
+             * -----------------------------------------------------------------
+             */
+
+
+            document.querySelectorAll(".about_collapsable_text").forEach(text => {
+                text.style.maxHeight = 0;
+            })
+            document.querySelectorAll(".about_dropdown_button").forEach(button => {
+                button.addEventListener("click", () => {
+                    const text = button.nextElementSibling;
+                    button.classList.toggle("about_dropdown_button--active");
+                    if (button.classList.contains("about_dropdown_button--active")) {
+                        text.style.maxHeight = text.scrollHeight + "px";
+                    } else {
+                        text.style.maxHeight = 0;
                     }
                 })
             })

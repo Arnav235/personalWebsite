@@ -261,7 +261,7 @@ header nav ul li a:focus {
 }
 
 .about-text {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 #about-text-paragraph{
   overflow: hidden;
@@ -403,6 +403,10 @@ header nav ul li a:focus {
   background-color: #333;
 }
 
+.accordian {
+  padding-top: 25px;
+}
+
 .accordian_button{
   display: block;
   width: 50%;
@@ -435,6 +439,42 @@ header nav ul li a:focus {
   max-height: 0;
   transition: max-height 0.2s;
   padding: 0 15px;
+}
+
+.about_dropdown {
+  margin-left: 20px;
+}
+
+.about_dropdown_button {
+  display: block;
+  width: 35%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: #545454;
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px; 
+  transition: background 0.2s;
+}
+
+.about_dropdown_button::after {
+  content: '\21C0';
+  float: left;
+  transform: scale(1.5);
+}
+
+.about_dropdown_button:hover {
+  background-color: #e6e6e6;
+}
+
+.about_collapsable_text {
+  overflow: hidden;
+  padding-top: 5px;
+  padding-left: 10px;
+  transition: max-height 0.2s;
 }
 /*-----------------services section-----------------*/
 
@@ -670,13 +710,20 @@ header nav ul li a:focus {
 /*---------------personal-detail---------------------*/
 
 .personal-detail {
-  background: url("../images/detailImg.jpg");
+  background: url("../images/stars.jpg");
   background-size: cover;
   box-shadow: 5px 5px 13px #a2a2a2;
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 75% auto;
 }
+
+@media (max-width:1173px){
+  .personal-detail {
+    background-size: auto 100%;
+  }
+}
+
 .personal-detail .detail-overlay {
   background: #fff;
   position: absolute;
@@ -690,7 +737,7 @@ header nav ul li a:focus {
   position: relative;
 }
 .personal-detail .details-heading-area {
-  color: #fff;
+  color: rgb(255, 255, 255);
   display: table;
   vertical-align: middle;
   height: 100%;
@@ -705,7 +752,7 @@ header nav ul li a:focus {
   height: 100%;
 }
 .personal-detail .details-heading-area h4 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: 800;
   margin-bottom: 16px;
 }
@@ -830,6 +877,9 @@ header nav ul li a:focus {
 }
 .personal-detail .detail-content-area {
   padding-left: 60px;
+}
+.hire-btn {
+  background-color: rgba(209, 208, 208, 0.6);
 }
 
 /*-------------------testimonial section---------------*/
@@ -1029,6 +1079,8 @@ header nav ul li a:focus {
   width: 100%;
   height: 100%;
   z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .blog-single-item {
