@@ -740,7 +740,7 @@ header nav ul li a:focus {
   color: rgb(255, 255, 255);
   display: table;
   vertical-align: middle;
-  height: 100%;
+  height: 99%;
 }
 .personal-detail .detail-table-cell {
   display: table-cell;
